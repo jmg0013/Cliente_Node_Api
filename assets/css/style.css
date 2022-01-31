@@ -18,14 +18,25 @@
 }
 
 footer{
-    border: 1px solid #333;
+    border: 2px solid #333;
     padding: 1rem;
+    margin-top: 3.8rem;
     text-align: center;
     font-size: 16px;
     line-height: 1.6;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
     left: 0;
     font-weight: bold;
+}
+
+iframe{
+    margin-left: 1rem;
+    height: 550px;
+    width: 900px;
+}
+
+input{
+    margin: 1rem;
 }
