@@ -1,6 +1,6 @@
 function buscarPorId() {
     var input = document.getElementById("buscarPorId");
-    fetch('http://localhost:3000/usuario/?id_usuario='+ input.value, {
+    fetch('http://localhost:3000/vehiculo_por_id_usuario/?id_usuario='+ input.value, {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -23,11 +23,11 @@ function buscarPorId() {
     })
 }
 
-function editUsu() {
-    var inputN = document.getElementById("nombreUsu");
-    var inputId = document.getElementById("idUsu");
+function editVehi() {
+    var inputId = document.getElementById("idVehi");
+    var inputM = document.getElementById("marcaUsu");
 
-    fetch('http://localhost:3000/editUsuario/?nombre='+ inputN.value + '&id_usuario='+ inputId.value, {
+    fetch('http://localhost:3000/editVehiculo/?id_vehiculo='+ inputId.value + '&marca='+ inputM.value, {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -40,30 +40,11 @@ function editUsu() {
     .then(res => console.log("bien"))
 }
 
-function crearUsu() {
-    var inputN = document.getElementById("nombreUsuCrear");
-    var inputApell = document.getElementById("apellUsuCrear");
-    var inputDNI = document.getElementById("dniUsuCrear");
-    var inputpass = document.getElementById("passUsuCrear");
-    var inputtype = document.getElementById("typeUsuCrear");   
+function crearVehi() {
+    var inputM = document.getElementById("marcaUsu");
+    var inputId = document.getElementById("idVehi");
 
-    fetch('http://localhost:3000/crearUsuario/?nombre='+ inputN.value + '&apell='+ inputApell.value + '&dni='+ inputDNI.value + '&pass='+ inputpass.value + '&tipo='+ inputtype.value, {
-        method: 'GET',
-        mode: 'cors',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(res => res.json())
-    .catch(error => console.error("error"))
-    .then(res => console.log("bien"))
-}
-
-function borrarUsu() {
-    var inputId = document.getElementById("idUsuBorrar");   
-
-    fetch('http://localhost:3000/eliminarUsuario/?id_usuario='+ inputId.value, {
+    fetch('http://localhost:3000/crearVehiculo/?id_vehiculo='+ inputId.value + '&marca='+ inputM.value, {
         method: 'GET',
         mode: 'cors',
         headers: {
