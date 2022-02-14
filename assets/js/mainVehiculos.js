@@ -41,10 +41,13 @@ function editVehi() {
 }
 
 function crearVehi() {
-    var inputM = document.getElementById("marcaUsu");
-    var inputId = document.getElementById("idVehi");
+    var inputId = document.getElementById("idVehiCrear");
+    var inputMatri = document.getElementById("matriVehiCrear");
+    var inputMarca = document.getElementById("marcaVehiCrear");
+    var inputModelo = document.getElementById("modeloVehiCrear");
+    var inputIdUsu = document.getElementById("idUsuCrear");
 
-    fetch('http://localhost:3000/crearVehiculo/?id_vehiculo='+ inputId.value + '&marca='+ inputM.value, {
+    fetch('http://localhost:3000/crearVehiculo/?id_vehiculo='+ inputId.value + '&matricula='+ inputMatri.value + '&marca='+ inputMarca.value + '&modelol='+ inputModelo.value + '&id_usuario='+ inputIdUsu.value, {
         method: 'GET',
         mode: 'cors',
         headers: {
