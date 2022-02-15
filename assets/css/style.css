@@ -27,6 +27,7 @@ header{
     padding: 1rem;
     vertical-align: middle;
     margin: 0;
+    box-shadow: 4px 6px 10px #666666;
 }
 
 ul {
@@ -58,9 +59,10 @@ iframe{
 }
 
 input{
-    margin: 0.6rem;
+    margin: 0.5rem;
     padding: 1rem;
     border-radius: 6px;
+    box-shadow: 1px 1px 1px #666666;
 }
 
 form {
@@ -72,5 +74,5 @@ input[type=text]{
 }
 
 h1{
-    margin: 1rem;
+    margin: 0.5rem;
 }
