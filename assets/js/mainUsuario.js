@@ -1,4 +1,5 @@
 function buscarPorId() {
+    document.querySelector('#contenedor').textContent=" ";
     var input = document.getElementById("buscarPorId");
     fetch('http://localhost:3000/usuario/?id_usuario='+ input.value, {
         method: 'GET',

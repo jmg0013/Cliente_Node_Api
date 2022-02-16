@@ -63,6 +63,7 @@ input{
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 1px 1px 1px #666666;
+    cursor: pointer;
 }
 
 form {

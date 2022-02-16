@@ -1,4 +1,5 @@
 function mostrarUsuarios() {
+    document.querySelector('#contenedor').textContent=" ";
     fetch('http://localhost:3000/', {
        method: 'GET',
        mode: 'cors',
@@ -23,6 +24,7 @@ function mostrarUsuarios() {
 }
 
 function mostrarVehiculos() {
+    document.querySelector('#contenedor').textContent=" ";
     fetch('http://localhost:3000/vehiculos', {
        method: 'GET',
        mode: 'cors',
@@ -47,6 +49,7 @@ function mostrarVehiculos() {
 }
 
 function mostrarServicios() {
+    document.querySelector('#contenedor').textContent=" ";
     fetch('http://localhost:3000/servicios', {
        method: 'GET',
        mode: 'cors',
